@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600&family=Dancing+Script:wght@600&display=swap');
+
+.navbar_style {
+    background-color: rgb(4, 4, 91);
+    color: white;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    position: fixed;
+
+    // font-family: 'Dancing Script', cursive;
+    .navbar-brand {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 27px;
+    }
+
+
+
+    .fa-bars {
+        font-size: 23px;
+    }
+
+    .fa-angle-down {
+        font-size: 23px;
+        color: white;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+.main_container {
+    .sidebar {
+        background-color: rgb(4, 4, 91);
+        color: white;
+        position: absolute;
+        height: 100vh;
+        top: 71px;
+        padding: 30px 10px;
+        transform: translateX(0px);
+        width: 288px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        transition: all 0.6s ease-in-out;
+
+        .sidebar_header {
+            display: flex;
+            ;
+            align-items: center;
+            justify-content: space-between;
+
+            .sidebar_title {
+                font-size: 24px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+            }
+
+            .fa-bars {
+                font-size: 23px;
+            }
+        }
+
+        .sidebar_list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+
+            .nav-link {
+                font-size: 21px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1px;
+                padding: 20px 0px;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: red;
+                }
+
+                .fa-house {
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    // for close sidebar
+    .sidebar_close {
+        transform: translateX(-100px);
+        transition: all 0.6s ease-in-out;
+        background-color: rgb(4, 4, 91);
+        color: white;
+        position: absolute;
+        height: 100vh;
+        top: 71px;
+        padding: 30px 10px;
+        transform: translateX(-100%);
+        width: 288px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        transition: all 0.6s ease-in-out;
+
+        .sidebar_header {
+            display: flex;
+            ;
+            align-items: center;
+            justify-content: space-between;
+
+            .sidebar_title {
+                font-size: 24px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+            }
+        }
+
+        .sidebar_list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+
+            .nav-link {
+                font-size: 21px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1px;
+                padding: 20px 0px;
+                text-decoration: none;
+                color: white;
+
+                .fa-house {
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//sidebar css
+@media (max-width: 990px) {
+    .navbar_style {
+        .navbar-brand {
+            font-size: 24px;
+        }
+
+        .fa-bars {
+            font-size: 20px;
+        }
+
+        .fa-angle-down {
+            display: none;
+        }
+    }
+
+    .main_container {
+        .sidebar {
+            .sidebar_header {
+                .sidebar_title {
+                    font-size: 22px;
+                }
+            }
+
+            .sidebar_list {
+                .nav-link {
+                    font-size: 20px;
+
+                    .fa-house {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar_close {
+        .sidebar_header {
+            .sidebar_title {
+                font-size: 22px;
+            }
+        }
+
+        .sidebar_list {
+            .nav-link {
+                font-size: 20px;
+
+                .fa-house {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main_container {
+        display: none;
+    }
+
+    .navbar_style {
+        .navbar-brand {
+            font-size: 24px;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .fa-angle-down {
+            display: block;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 567px) {
+    .main_container {
+        display: none;
+    }
+
+    .navbar_style {
+        .navbar-brand {
+            font-size: 23px;
+        }
+
+        .nav-link {
+            font-size: 19px;
+        }
+
+
+        .fa-angle-down {
+            display: block;
+            font-size: 19px;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 300px) {
+    .navbar_style {
+        .navbar-brand {
+            font-size: 19px;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            font-size: 16px;
+        }
+
+        .fa-angle-down {
+            font-size: 19px;
+        }
+
+        .btn {
+            font-size: 13px;
+        }
+    }
+
+    .main_container {
+        display: none;
+    }
+}
