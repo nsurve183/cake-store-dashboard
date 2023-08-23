@@ -23,37 +23,38 @@
   box-shadow: none;
 }
 
-.main_container .sidebar {
+.sidebar {
   background-color: rgb(4, 4, 91);
   color: white;
   position: absolute;
   height: 100vh;
   top: 71px;
+  left: 9px;
   padding: 30px 10px;
   transform: translateX(0px);
   width: 288px;
   font-family: "Bricolage Grotesque", sans-serif;
   transition: all 0.6s ease-in-out;
 }
-.main_container .sidebar .sidebar_header {
+.sidebar .sidebar_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main_container .sidebar .sidebar_header .sidebar_title {
+.sidebar .sidebar_header .sidebar_title {
   font-size: 24px;
   letter-spacing: 1px;
   margin-bottom: 0;
 }
-.main_container .sidebar .sidebar_header .fa-bars {
+.sidebar .sidebar_header .fa-bars {
   font-size: 23px;
 }
-.main_container .sidebar .sidebar_list {
+.sidebar .sidebar_list {
   list-style: none;
   padding: 0;
   margin: 15px 0;
 }
-.main_container .sidebar .sidebar_list .nav-link {
+.sidebar .sidebar_list .nav-link {
   font-size: 21px;
   display: flex;
   align-items: center;
@@ -62,14 +63,15 @@
   text-decoration: none;
   color: white;
 }
-.main_container .sidebar .sidebar_list .nav-link:hover {
+.sidebar .sidebar_list .nav-link:hover {
   color: red;
 }
-.main_container .sidebar .sidebar_list .nav-link .fa-house {
+.sidebar .sidebar_list .nav-link .fa-house {
   font-size: 16px;
   margin-right: 10px;
 }
-.main_container .sidebar_close {
+
+.sidebar_close {
   transform: translateX(-100px);
   transition: all 0.6s ease-in-out;
   background-color: rgb(4, 4, 91);
@@ -83,22 +85,22 @@
   font-family: "Bricolage Grotesque", sans-serif;
   transition: all 0.6s ease-in-out;
 }
-.main_container .sidebar_close .sidebar_header {
+.sidebar_close .sidebar_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main_container .sidebar_close .sidebar_header .sidebar_title {
+.sidebar_close .sidebar_header .sidebar_title {
   font-size: 24px;
   letter-spacing: 1px;
   margin-bottom: 0;
 }
-.main_container .sidebar_close .sidebar_list {
+.sidebar_close .sidebar_list {
   list-style: none;
   padding: 0;
   margin: 15px 0;
 }
-.main_container .sidebar_close .sidebar_list .nav-link {
+.sidebar_close .sidebar_list .nav-link {
   font-size: 21px;
   display: flex;
   align-items: center;
@@ -107,7 +109,7 @@
   text-decoration: none;
   color: white;
 }
-.main_container .sidebar_close .sidebar_list .nav-link .fa-house {
+.sidebar_close .sidebar_list .nav-link .fa-house {
   font-size: 16px;
   margin-right: 10px;
 }

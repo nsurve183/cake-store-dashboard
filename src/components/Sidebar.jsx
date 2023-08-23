@@ -2,7 +2,10 @@ import React from 'react'
 import '../scss/navbar/navbar.css'
 import { Link } from 'react-router-dom'
 
-const Sidebar = ({ isOpen, sidebar_close, children }) => {
+
+
+
+const Sidebar = ({isOpen, sidebar_close}) => {
   const routes = [
     {
       path: '/',
@@ -34,10 +37,10 @@ const Sidebar = ({ isOpen, sidebar_close, children }) => {
       name: "Add Cup Cakes",
       icon: "fa-solid fa-house"
     },
-  ]
+  ];
+
   return (
     <div>
-      <div className="main_container">
         <div className={isOpen ? "sidebar" : "sidebar_close"}>
           <div className="sidebar_header">
             <div className="sidebar_title">Dahsboard</div>
@@ -50,11 +53,9 @@ const Sidebar = ({ isOpen, sidebar_close, children }) => {
                 {val.name}
               </Link>
             })}
-            {/* <li ><Link className='nav-link' to={'/'}>Home</Link></li> */}
           </ul>
         </div>
       </div>
-    </div>
   )
 }
 

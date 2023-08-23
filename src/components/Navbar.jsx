@@ -1,22 +1,9 @@
 
 
-import { useState } from 'react'
+
 import '../scss/navbar/navbar.css'
-import Sidebar from './Sidebar'
 
-
-
-const Navbar = () => {
-    const [isOpen, setIsopen] = useState(true)
-
-    const handleOpen = () => {
-        setIsopen(true)
-    }
-
-    const sidebar_close = () => {
-        setIsopen(false)
-    }
-    
+const Navbar = ({handleOpen}) => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar_style">
@@ -45,7 +32,7 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Add Party Cakes</a>
-                            </li>
+                           </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Add Weeding Cakes</a>
                             </li>
@@ -58,7 +45,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <Sidebar isOpen={isOpen} sidebar_close={sidebar_close}/>
         </div>
     )
 }
