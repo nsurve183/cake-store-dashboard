@@ -2,15 +2,19 @@
 
 
 import '../scss/navbar/navbar.css'
+import CategoriesContext from '../Context/context'
+import { useContext } from 'react'
 
-const Navbar = ({handleOpen}) => {
+const Navbar = () => {
+    const context = useContext(CategoriesContext);
+    const {handleOpen} = context
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar_style">
                 <div className="container-fluid">
                     {/* sidebar button */}
                     <div className="d-flex justify-content-center align-items-center">
-                        <i className="fa-solid fa-bars me-3 d-md-block d-none" type="button" onClick={handleOpen}></i>
+                        <i className="fa-solid fa-bars me-3" type="button" onClick={handleOpen}></i>
                         <a className="navbar-brand mb-0" href="#">Dashboard</a>
                     </div>
                     {/* sidebar button */}
@@ -23,7 +27,7 @@ const Navbar = ({handleOpen}) => {
                     {/* navbar-toggler */}
                     
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-md-none d-block my-2">
+                        <ul className="navbar-nav ms-auto my-2 d-lg-none">
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -39,9 +43,12 @@ const Navbar = ({handleOpen}) => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Add Cup Cakes</a>
                             </li>
+                            <div>
                         <button className='btn btn-outline-primary btn-sm'>Sign Up</button>
                         <button className='btn btn-outline-primary btn-sm ms-3'>Log In</button>
+                        </div>
                         </ul>
+                     
                     </div>
                 </div>
             </nav>

@@ -1,11 +1,12 @@
 
 
 import React from 'react'
+import CategegoriesCards from './CategegoriesCards'
 
 const Home = () => {
   return (
     <div>
-     <h2>Home</h2>
+     <CategegoriesCards/>
     </div>
   )
 }

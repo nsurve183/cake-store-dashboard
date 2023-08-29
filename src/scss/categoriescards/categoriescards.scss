@@ -1,0 +1,66 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600&family=Dancing+Script:wght@600&display=swap');
+
+@mixin font-family{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.card{
+    background-color: rgb(4, 4, 91) !important;
+    color: white;
+    @include font-family;
+    text-decoration: none;
+
+    &:hover{
+        color: white;
+    }
+    .card-header{
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+    .card-body{
+        .fa-solid{
+            font-size: 44px;
+        }
+        .user_count{
+            font-size: 35px;
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .card{
+        .card-header{
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .card-body{
+            .fa-solid{
+                font-size: 40px;
+            }
+            .user_count{
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 567px) {
+    .card{
+        .card-header{
+            font-size: 22px;
+        }
+        .card-body{
+            .fa-solid{
+                font-size: 35px;
+            }
+            .user_count{
+                font-size: 30px;
+            }
+        }
+    }
+}

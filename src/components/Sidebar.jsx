@@ -1,44 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../scss/navbar/navbar.css'
 import { Link } from 'react-router-dom'
+import CategoriesContext from '../Context/context'
+import { routes } from '../Arrays/arrays'
 
 
 
-
-const Sidebar = ({isOpen, sidebar_close}) => {
-  const routes = [
-    {
-      path: '/',
-      name: "Home",
-      icon: "fa-solid fa-house"
-    },
-    {
-      path: '/about',
-      name: "Add Birth Day Cakes",
-      icon: "fa-solid fa-house"
-    },
-    {
-      path: '/contact',
-      name: "Add Party Cakes",
-      icon: "fa-solid fa-house"
-    },
-    {
-      path: '/contact',
-      name: "Add Cup Cakes",
-      icon: "fa-solid fa-house"
-    },
-    {
-      path: '/contact',
-      name: "Add Weeding Cakes",
-      icon: "fa-solid fa-house"
-    },
-    {
-      path: '/contact',
-      name: "Add Cup Cakes",
-      icon: "fa-solid fa-house"
-    },
-  ];
-
+const Sidebar = () => {
+  const context = useContext(CategoriesContext)
+  const {isOpen, sidebar_close} = context
   return (
     <div>
         <div className={isOpen ? "sidebar" : "sidebar_close"}>

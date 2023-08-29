@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600&family=Dancing+Script:wght@600&display=swap");
+.card {
+  background-color: rgb(4, 4, 91) !important;
+  color: white;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-decoration: none;
+}
+.card:hover {
+  color: white;
+}
+.card .card-header {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+.card .card-body .fa-solid {
+  font-size: 44px;
+}
+.card .card-body .user_count {
+  font-size: 35px;
+}
+
+@media (max-width: 991px) {
+  .card .card-header {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .card .card-body .fa-solid {
+    font-size: 40px;
+  }
+  .card .card-body .user_count {
+    font-size: 35px;
+  }
+}
+@media (max-width: 567px) {
+  .card .card-header {
+    font-size: 22px;
+  }
+  .card .card-body .fa-solid {
+    font-size: 35px;
+  }
+  .card .card-body .user_count {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=categoriescards.css.map */

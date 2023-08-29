@@ -4,8 +4,7 @@
     background-color: rgb(4, 4, 91);
     color: white;
     font-family: 'Bricolage Grotesque', sans-serif;
-    position: fixed;
-
+    width: 100vw;
     // font-family: 'Dancing Script', cursive;
     .navbar-brand {
         color: white;
@@ -44,10 +43,10 @@
     width: 288px;
     font-family: 'Bricolage Grotesque', sans-serif;
     transition: all 0.6s ease-in-out;
+    z-index: 4;
 
     .sidebar_header {
-        display: flex;
-        ;
+        display: flex;;
         align-items: center;
         justify-content: space-between;
 
@@ -80,7 +79,7 @@
                 color: red;
             }
 
-            .fa-house {
+            .fa-solid{
                 font-size: 16px;
                 margin-right: 10px;
             }
@@ -102,7 +101,7 @@
     width: 288px;
     font-family: 'Bricolage Grotesque', sans-serif;
     transition: all 0.6s ease-in-out;
-
+    z-index: 4;
     .sidebar_header {
         display: flex;
         ;
@@ -141,56 +140,28 @@
 
 
 //sidebar css
-@media (max-width: 990px) {
+@media (max-width: 991px) {
     .navbar_style {
         .navbar-brand {
             font-size: 24px;
         }
 
+        
+        .nav-link {
+            color: white;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
         .fa-bars {
-            font-size: 20px;
+            display: none;
         }
 
         .fa-angle-down {
-            display: none;
+            display: block;
         }
-    }
-
-    .main_container {
-        .sidebar {
-            .sidebar_header {
-                .sidebar_title {
-                    font-size: 22px;
-                }
-            }
-
-            .sidebar_list {
-                .nav-link {
-                    font-size: 20px;
-
-                    .fa-house {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-
-    .sidebar_close {
-        .sidebar_header {
-            .sidebar_title {
-                font-size: 22px;
-            }
-        }
-
-        .sidebar_list {
-            .nav-link {
-                font-size: 20px;
-
-                .fa-house {
-                    font-size: 14px;
-                }
-            }
+        .btn {
+            font-size: 15px;
         }
     }
 }
@@ -215,10 +186,6 @@
 
         .fa-angle-down {
             display: block;
-        }
-
-        .btn {
-            font-size: 15px;
         }
     }
 }
